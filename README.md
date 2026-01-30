@@ -6,3 +6,4 @@ wusctong's dotfiles
  - LINUX
    - fish
    - nvim
+   - fastfetch
