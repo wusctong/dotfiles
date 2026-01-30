@@ -1,7 +1,7 @@
 # dotfiles
-
-### wusctong's dotfiles.
-
-#### included dotfiles
- - wezterm
-
+wusctong's dotfiles
+### included dotfiles*
+ - WINDOWS
+   - wezterm (WSL)
+ - LINUX
+   - fish
