@@ -1,9 +1,12 @@
-# dotfiles
-wusctong's dotfiles
-### included dotfiles
- - WINDOWS
-   - wezterm (WSL)
- - LINUX
-   - fish
-   - nvim
-   - fastfetch
+╭──────────────────────────╮
+│ **FILE STRUCTURE**           │
+│ ***dotfiles***/ of wusctong    │
+│ ├── LINUX/               │
+│ │   └── .config/         │
+│ │       ├── fish/        │
+│ │       ├── **nvim**/        │
+│ │       └── fastfetch/   │
+│ └── WINDOWS/             │
+│     └── .config/         │
+│         └── **wezterm**/     │
+╰──────────────────────────╯
