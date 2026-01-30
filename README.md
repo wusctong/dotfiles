@@ -1,16 +1,14 @@
-``` text
 ```
 ╭──────────────────────────╮
-│ **FILE STRUCTURE**           │
-│ ***dotfiles***/ of wusctong    │
+│ FILE STRUCTURE           │
+│ dotfiles/ of wusctong    │
 │ ├── LINUX/               │
 │ │   └── .config/         │
 │ │       ├── fish/        │
-│ │       ├── **nvim**/        │
+│ │       ├── nvim/        │
 │ │       └── fastfetch/   │
 │ └── WINDOWS/             │
 │     └── .config/         │
-│         └── **wezterm**/     │
+│         └── wezterm/     │
 ╰──────────────────────────╯
-```
 ```
