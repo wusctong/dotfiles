@@ -2,6 +2,9 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 
+config.initial_cols = 120
+config.initial_rows = 30
+
 config.font_size = 12.5
 config.font = wezterm.font {
   family = 'Maple Mono NF CN',
@@ -57,8 +60,13 @@ config.colors = {
 config.keys = {
   {
     key = 'v',
-    mods = 'CTRL',
+    mods = 'CTRL|SHIFT',
     action = wezterm.action.PasteFrom 'Clipboard',
+  },
+  {
+    key = 'c',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.CopyTo 'Clipboard',
   }
 }
 
