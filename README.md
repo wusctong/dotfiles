@@ -5,3 +5,4 @@ wusctong's dotfiles
    - wezterm (WSL)
  - LINUX
    - fish
+   - nvim
