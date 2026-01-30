@@ -1,6 +1,6 @@
 # dotfiles
 wusctong's dotfiles
-### included dotfiles*
+### included dotfiles
  - WINDOWS
    - wezterm (WSL)
  - LINUX
