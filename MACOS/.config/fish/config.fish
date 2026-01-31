@@ -6,7 +6,7 @@ function fish_greeting
     set -gx PATH $PATH /opt/homebrew/sbin
     zoxide init fish | source
     starship init fish | source
-
+    fish_config theme choose "Catppuccin Mocha"
     fastfetch
     # clear
     # cat ~/Developer/c++/lambdafetch/ascii.txt
