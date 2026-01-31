@@ -7,8 +7,9 @@ function fish_greeting
     zoxide init fish | source
     starship init fish | source
     fish_config theme choose "Catppuccin Mocha"
+
+    clear
     fastfetch
-    # clear
     # cat ~/Developer/c++/lambdafetch/ascii.txt
     # echo (set_color yellow)"Welcome to Fish "(set_color red --bold)"<"(set_color yellow)">"(set_color bryellow)"<"(set_color normal)"."
 end
