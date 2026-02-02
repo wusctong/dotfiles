@@ -16,6 +16,7 @@ config.default_domain = "WSL:Debian"
 
 config.use_fancy_tab_bar = true
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+config.hide_tab_bar_if_only_one_tab = true
 
 config.color_scheme = "Tokyo Night Moon"
 config.window_frame = {
