@@ -34,4 +34,10 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
-autocmd BufWritePre *.c,*.cpp,*.h,*.hpp :silent %!clang-format
+function! FormatAndKeepCursor()
+    let l:save = winsaveview()
+    silent %!clang-format
+    call winrestview(l:save)
+endfunction
+
+autocmd BufWritePre *.c,*.cpp,*.h,*.hpp call FormatAndKeepCursor()
