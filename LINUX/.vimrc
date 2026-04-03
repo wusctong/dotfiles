@@ -24,15 +24,16 @@ set listchars=tab:>\ ,trail:·,space:·
 
 set termguicolors
 
-let g:airline_theme = 'gruvbox'
-let g:airline_section_separators = ['◤', '◢']
-let g:airline_left_sep = '◤'
-let g:airline_right_sep = '◢'
+set noshowmode
+let g:airline_theme = 'catppuccin_mocha'
+" let g:airline_section_separators = ['', '']
+" let g:airline_left_sep = ''
+" let g:airline_right_sep = ''
 
-set background=dark
-let g:gruvbox_contrast_dark = 'hard'
-autocmd ColorScheme gruvbox highlight SpecialKey guifg=#3a3a3a
-colorscheme gruvbox
+" set background=dark
+" let g:gruvbox_contrast_dark = 'hard'
+autocmd ColorScheme catppuccin_mocha highlight SpecialKey guifg=#3a3a3a
+colorscheme catppuccin_mocha
 
 
 syntax on
