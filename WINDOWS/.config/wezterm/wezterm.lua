@@ -5,57 +5,26 @@ local config = wezterm.config_builder()
 config.initial_cols = 120
 config.initial_rows = 30
 
-config.font_size = 12.5
-config.font = wezterm.font({
-	family = "Maple Mono NF CN",
-	harfbuzz_features = { "calt=1", "cv01=1", "cv65=1", "ss02=1" },
+config.font_size = 18
+config.font = wezterm.font_with_fallback({
+	{ family = "Iosevka Term", harfbuzz_features = { "calt=1", "ss04=1" } },
+	{ family = "Symbols Nerd Font Mono", weight = "Thin" },
 })
 
 config.default_cwd = "~"
-config.default_domain = "WSL:Debian"
+config.default_domain = "WSL:archlinux"
 
+config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = true
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
-config.hide_tab_bar_if_only_one_tab = true
 
-config.color_scheme = "Tokyo Night Moon"
+config.color_scheme = "Catppuccin Mocha"
 config.window_frame = {
-	font_size = 10.0,
-	font = wezterm.font({
-		family = "Maple Mono NF CN",
-		harfbuzz_features = { "calt=1", "cv01=1", "ss02=1" },
-		weight = "ExtraLight",
+	font_size = 14.0,
+	font = wezterm.font_with_fallback({
+		{ family = "Iosevka Term", harfbuzz_features = { "calt=1", "ss04=1" } },
+		{ family = "Symbols Nerd Font Mono", weight = "Thin" },
 	}),
-	active_titlebar_bg = "#222436",
-	inactive_titlebar_bg = "#222436",
-}
-config.colors = {
-	tab_bar = {
-		background = "#222436",
-		inactive_tab_edge = "#1e2030",
-		active_tab = {
-			bg_color = "#82aaff",
-			fg_color = "#1e2030",
-		},
-		inactive_tab = {
-			bg_color = "#2f334d",
-			fg_color = "#545c7e",
-		},
-		inactive_tab_hover = {
-			bg_color = "#2f334d",
-			fg_color = "#82aaff",
-			intensity = "Bold",
-		},
-		new_tab = {
-			bg_color = "#222436",
-			fg_color = "#82aaff",
-		},
-		new_tab_hover = {
-			bg_color = "#222436",
-			fg_color = "#82aaff",
-			intensity = "Bold",
-		},
-	},
 }
 
 config.keys = {
