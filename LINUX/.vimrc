@@ -52,6 +52,8 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
+nnoremap <Space><Space> :Ex<CR>
+
 
 function! FormatCAndKeepCursor()
     let l:save = winsaveview()
