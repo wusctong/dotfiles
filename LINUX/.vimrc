@@ -39,11 +39,22 @@ syntax on
 filetype plugin indent on
 let g:lsp_document_highlight_enabled = 1
 let g:lsp_semantic_enabled = 1
-let g:asyncomplete_auto_popup = 1
+let g:asyncomplete_auto_popup = 0
 let g:asyncomplete_auto_completeopt = 1
 set completeopt=menuone,noinsert,noselect,preview
 
 
+function! ToggleAsyncomplete()
+    if g:asyncomplete_auto_popup
+        let g:asyncomplete_auto_popup = 0
+        echo "Autocomplete OFF"
+    else
+        let g:asyncomplete_auto_popup = 1
+        echo "Autocomplete ON"
+    endif
+endfunction
+
+nmap <silent> g<BS> :call ToggleAsyncomplete()<CR>
 nmap <silent> gd <plug>(lsp-definition)
 nmap <silent> gr <plug>(lsp-references)
 nmap <silent> gh  <plug>(lsp-hover)
