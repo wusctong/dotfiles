@@ -1,8 +1,0 @@
-# This file contains fish universal variable definitions.
-# VERSION: 3.0
-SETUVAR --export --path PATH:/usr/local/bin\x1e/System/Cryptexes/App/usr/bin\x1e/usr/bin\x1e/bin\x1e/usr/sbin\x1e/sbin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/local/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/appleinternal/bin\x1e/opt/pmk/env/global/bin\x1e/Library/Apple/usr/bin\x1e/Applications/Little\x20Snitch\x2eapp/Contents/Components\x1e/Applications/VMware\x20Fusion\x2eapp/Contents/Public\x1e/usr/local/share/dotnet\x1e\x7e/\x2edotnet/tools\x1e/Applications/kitty\x2eapp/Contents/MacOS\x1e/opt/homebrew/Cellar/zigup/2025\x2e05\x2e24/bin
-SETUVAR __fish_initialized:4300
-SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/Catppuccin\x20Frappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Macchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Mocha\x2etheme
-SETUVAR _fisher_jomik_2F_fish_2D_gruvbox_files:\x7e/\x2econfig/fish/functions/theme_gruvbox\x2efish
-SETUVAR _fisher_plugins:catppuccin/fish\x1ejomik/fish\x2dgruvbox
-SETUVAR _fisher_upgraded_to_4_4:\x1d
