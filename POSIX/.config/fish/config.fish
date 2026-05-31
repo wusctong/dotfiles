@@ -13,10 +13,6 @@ set -x PKG_CONFIG_PATH \
 zoxide init fish | source
 starship init fish | source
 
-function starship_cursor_fix --on-event fish_prompt
-    echo -ne '\e[2 q'
-end
-
 function fish_greeting
     fish_config theme choose catppuccin-mocha
     clear
