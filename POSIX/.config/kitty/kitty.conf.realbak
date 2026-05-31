@@ -1,13 +1,13 @@
 # Font
-font_size 22
-font_family                    Cascadia Code
-bold_font                      Cascadia Code Bold
-italic_font                    Cascadia Code Italic
-bold_italic_font               Cascadia Code Bold Italic
-font_features                  Cascadia-Code +calt
-font_features                  Cascadia-Code-Bold +calt
-font_features                  Cascadia-Code-Italic +calt
-font_features                  Cascadia-Code-Bold-Italic +calt
+font_size 15.5
+font_family          Maple Mono NF CN Regular
+bold_font            Maple Mono NF CN Bold
+italic_font          Maple Mono NF CN Italic
+bold_italic_font     Maple Mono NF CN Bold Italic
+font_features        MapleMono-NF-CN-Regular +calt +cv01 +cv65 +ss02
+font_features        MapleMono-NF-CN-Bold +calt +cv01 +cv65 +ss02
+font_features        MapleMono-NF-CN-Italic +calt +cv01 +cv65 +ss02
+font_features        MapleMono-NF-CN-BoldItalic +calt +cv01 +cv65 +ss02
 symbol_map U+23FB-U+23FE,U+2665,U+26A1,U+2B58,U+E000-U+E00A,U+E0A0-U+E0A3,U+E0B0-U+E0D4,U+E200-U+E2A9,U+E300-U+E3E3,U+E5FA-U+E6AA,U+E700-U+E7C5,U+EA60-U+EBEB,U+F000-U+F2E0,U+F300-U+F32F,U+F400-U+F4A9,U+F500-U+F8FF,U+F0001-U+F1AF0 Symbols Nerd Font Mono
 # -> != >=
 disable_ligatures cursor
@@ -15,28 +15,25 @@ disable_ligatures cursor
 # Window
 hide_window_decorations        titlebar-only
 window_padding_width           7
-# remember_window_size           yes
+remember_window_size           yes
 
 # Tab bar
-tab_bar_edge                   top
-tab_bar_style                  powerline
-tab_powerline_style            slanted
+tab_bar_edge                top
+tab_bar_style               powerline
+tab_powerline_style         slanted
 
 # General key mapping
 macos_option_as_alt yes
 
-# Extra
+# Animation
 enable_audio_bell no
-scrollbar never
-pixel_scroll no
-cursor_shape block
-cursor_blink_interval 0
 cursor_trail 3
 cursor_trail_decay 0.1 0.4
+cursor_blink_interval 0
 
 # Theme switching
+map ctrl+cmd+shift+l kitten themes --reload-in=all Catppuccin Kitty Latte
 map ctrl+cmd+shift+m kitten themes --reload-in=all Catppuccin Kitty Mocha
-map ctrl+cmd+shift+t kitten themes
 
 # Change Editor
 editor /opt/homebrew/bin/nvim
